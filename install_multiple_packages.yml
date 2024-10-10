@@ -1,0 +1,10 @@
+---
+-  name:  my test playbook
+   hosts: webservers
+   become: true
+   tasks: 
+   -  name: install packages
+      yum:
+       name: ['docker' , 'git' , 'tree' , 'telnet' , 'wget']
+       state: installed
+

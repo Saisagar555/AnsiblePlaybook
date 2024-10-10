@@ -1,0 +1,10 @@
+---
+-  name: test a playbook
+   hosts: all
+   become: true
+   tasks:
+   -  name: install a package
+      yum:
+         name:  tree
+         state: installed
+        
